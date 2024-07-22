@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args) {
+       Scanner scan = new Scanner(System.in);
+       
+       int A = scan.nextInt();
+       
+       String [] arr = {
+    		   " @@@   @@@ ",
+    		   "@   @ @   @",
+    		   "@    @    @",
+    		   "@         @",
+    		   " @       @ ",
+    		   "  @     @  ",
+    		   "   @   @  ",
+    		   "    @ @    ",
+    		   "     @     "
+       };
+       for(int i=0; i<A; i++) {
+    	   for(int j=0; j<arr.length; j++) {
+    		   System.out.println(arr[j]);
+    	   }
+    	   
+       }
+    } 
+}
