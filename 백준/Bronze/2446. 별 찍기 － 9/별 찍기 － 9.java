@@ -1,27 +1,22 @@
 import java.io.*;
-import java.util.*;
 
 public class Main {
 
-    public static void main(String[] args) throws IOException {
-
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-
-        int N = Integer.parseInt(br.readLine());
-
-        int first = N * 2 - 1;
-
-        for (int i = first; 0 < i; i-=2)
-        {
-            System.out.print(" ".repeat((first - i) / 2));
-            System.out.println("*".repeat(i));
-        }
-
-        for (int i = 3; i <= first; i+=2)
-        {
-            System.out.print(" ".repeat((first - i) / 2));
-            System.out.println("*".repeat(i));
-        }
-
-    }
+	public static void main(String[] args) throws IOException {
+		 BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
+		 
+		 int num = Integer.parseInt(bf.readLine());
+	
+		 int N = num * 2 -1;
+		 
+		 for(int i=0; i<num; i++) {
+			 System.out.print(" ".repeat(i));
+			 System.out.println("*".repeat(N-2*i));
+		 }
+		 
+		 for (int i = 1; i < num; i++) { 
+	            System.out.print(" ".repeat(num - i - 1)); 
+	            System.out.println("*".repeat(2 * i + 1));
+		 }
+	}
 }
